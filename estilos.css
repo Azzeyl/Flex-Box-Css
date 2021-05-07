@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*  ESTO HACE QUE EL PADIN MARGEN INTERNA NO MODIFIQUE EL CUADRO*/
+}
+
+.padre{
+    background-color: green;
+    width: 80%; /*el cuadro sea del 80%*/
+    height: 800px;
+    max-width: 800px;/*QUE MAXIMO SEA DE 800PX*/
+
+
+    display: flex; /*SE VUELVE FLEXIBLE*/
+
+    flex-direction: row; /*DARLE DIRECION SI EN COLIMNA O EN FILA*/
+    flex-wrap:wrap; /*RESPETE EL TAMAÑO DE CADA CAJA EN ESTE CASO 100PX*/
+
+    justify-content: flex-end; /*PODER ALINEAR EL CONTENIDO*/
+    align-items: center; /*PODER CENTRARLO AL CONTENDIDO*/
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    margin: 20px;
+    padding: 10px; /*MARGEN INTERNA*/
+    font-size: 50px;
+    text-align: center;
+}
